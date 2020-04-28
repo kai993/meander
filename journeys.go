@@ -34,7 +34,7 @@ var Journeys = []interface{}{
 
 func (j *j) Public() interface{} {
 	return map[string]interface{}{
-		"name": j.Name,
+		"name":     j.Name,
 		"journeys": strings.Join(j.PlaceTypes, "|"),
 	}
 }
